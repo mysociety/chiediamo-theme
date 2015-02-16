@@ -62,10 +62,10 @@ msgid ""
 msgstr "Tema rilasciato sotto licenza Creative Commons<br/>Attribution Share-Alike CC BY SA 3.0"
 
 msgid "Think of a question for a public authority."
-msgstr "Scrivi una domanda ad un'amministrazione."
+msgstr "Scrivi una domanda a un'amministrazione."
 
 msgid "To get information from public authorities:"
-msgstr "Chiedi informazioni a un'amministrazione"
+msgstr "Chiedi informazioni e documenti a un'amministrazione"
 
 msgid "We send the question for you"
 msgstr "Noi inviamo la domanda per te"
