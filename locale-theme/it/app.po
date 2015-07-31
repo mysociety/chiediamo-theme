@@ -1,7 +1,7 @@
 # Chiediamo-theme
 # Copyright (C) 2013 mySociety
 # This file is distributed under the same license as the PACKAGE package.
-# 
+#
 # Translators:
 # Antonella <anapolitano@gmail.com>, 2015
 # louisecrow <louise@mysociety.org>, 2015
