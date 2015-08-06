@@ -37,57 +37,43 @@
   </div>
 
   <div id="frontpage-intro-sidebar">
-    <div id="frontpage-lead-ad">
-      <h4>
+    <div id="frontpage-lead-ad" style="height:147px;">
+      <h4 style="margin-top:-20px;">
         Quanto è trasparente l'Italia?
       </h4>
-      <p>
+      <p style="margin-top:-5px">
         Nel 2013 abbiamo realizzato il primo studio di monitoraggio sull'accesso all'informazione della Pubblica Amministrazione in Italia.
         Dall'analisi risulta che solo il 13% delle risposte è considerato pienamente soddisfacente.
         <br>Maggiori informazioni nel nostro <a href="http://www.dirittodisapere.it/rapporto/">rapporto</a> (in italiano e inglese).</a>.
       </p>
     </div>
 
-    <div id="frontpage-lead-subscribe">
+    <div id="frontpage-lead-subscribe" style="height:145px;">
       <form action="//dirittodisapere.us10.list-manage.com/subscribe/post?u=51cd6b512dea2829259abf647&amp;id=17caa8ef6a" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" target="_blank">
-        <label for="mce-EMAIL"><p><%= _("Desideri rimanere informato e ricevere tutti gli aggiornamenti su Diritto di Sapere?") %></p>
-        <p><%= _("Iscriviti alla nostra newsletter:") %></p></label>
-        <p><input type="email" value="" name="EMAIL" class="email" id="mce-EMAIL" placeholder="<%= _('Indirizzo email') %>" required="true"></p>
-        <p><input type="submit" value="<%= _('Iscriviti') %>" name="subscribe" id="mc-embedded-subscribe"></p>
+        <!--<label for="mce-EMAIL"><p><%= _("Desideri rimanere informato e ricevere tutti gli aggiornamenti su Diritto di Sapere?") %></p>
+        <p><%= _("Iscriviti alla nostra newsletter:") %></p></label>-->
+        <p><input type="email" value="" name="EMAIL" class="email" id="mce-EMAIL" placeholder="<%= _('Indirizzo email') %>" required="true" >
+        <input type="submit" value="<%= _('iscriviti alla newsletter') %>" name="subscribe" id="mc-embedded-subscribe"></p>
       </form>
+      <div id="frontpage-share-buttons">
+        <iframe src="//www.facebook.com/plugins/like.php?href=https%3A%2F%2Fwww.facebook.com%2FDirittodisapereit&amp;send=false&amp;layout=button_count&amp;width=118&amp;show_faces=false&amp;action=like&amp;colorscheme=light&amp;font&amp;height=21" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:118px; height:21px;" allowTransparency="true"></iframe>
+        <span>
+          <a href="https://twitter.com/dirittodisapere" class="twitter-follow-button" data-show-count="false">Follow @dirittodisapere</a>
+          <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+        <!--<a href="https://twitter.com/share" class="twitter-share-button" data-url="" data-lang="it">Tweet</a> -->
+        <!--<a href="https://twitter.com/dirittodisapere "  data-url="" data-lang="it" target="_blank">Tweet</a>-->
+        <!--<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>-->
+        </span>
+
+      </div>
     </div>
 
-    <div id="frontpage-share-buttons">
-      <iframe src="//www.facebook.com/plugins/like.php?href=https%3A%2F%2Fwww.facebook.com%2F<%= site_name %>&amp;send=false&amp;layout=button_count&amp;width=118&amp;show_faces=false&amp;action=like&amp;colorscheme=light&amp;font&amp;height=21" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:118px; height:21px;" allowTransparency="true"></iframe>
-      <span>
-      <a href="https://twitter.com/share" class="twitter-share-button" data-url="" data-lang="it">Tweet</a>
-      <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
-      </span>
 
-    </div>
   </div>
 </div>
 <!-- /frontpage-intro -->
 
 <div id="frontpage-content">
-  <div id="frontpage-search-box">
-    <div id="frontpage-search-label">
-      <h4>
-  <%=  _("Search over<br/>
-  <strong>{{number_of_requests}} requests</strong> <span>and</span><br/>
-  <strong>{{number_of_authorities}} authorities</strong>",
-        :number_of_requests => InfoRequest.visible.count, :number_of_authorities => PublicBody.visible.count) %></h4>
-
-    </div>
-    <div id="frontpage-search-form">
-      <%= form_tag({:action => "search_redirect"}, {:id => "search_form"}) do %>
-      <div>
-        <%= text_field_tag 'query', params[:query], { :size => 80 } %><%= submit_tag _('Search') %>
-      </div>
-      <% end %>
-    </div>
-  </div>
-  <!-- /frontpage-search-box -->
 
   <div id="frontpage-updates">
     <div id="frontpage-updates-news">
