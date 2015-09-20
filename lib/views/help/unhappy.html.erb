@@ -1,0 +1,72 @@
+<% @title = "Non sei soddisfatto della risposta ricevuta?" %>
+
+
+<% if !@info_request.nil? %>
+<h1>Se non sei soddisfatto della risposta ricevuta '<%=request_link(@info_request) %>'?
+</h1>
+<% else %>
+<h1>Non sei soddisfatto della risposta ricevuta?</h1>
+<% end %>
+
+<p>Se ...</p>
+
+<ul>
+<li>Non hai ricevuto risposta entro 30 giorni (solari)</li>
+<li>Non hai ricevuto tutte le informazioni che avevi chiesto <strong>o</strong></li>
+<li>La tua richiesta è stata rifiutata ma senza motivazioni adeguate alla normativa</li>
+</ul>
+
+<p>... a questo punto puoi</p>
+
+<ol>
+<li>Chiedere all'amministrazione <strong>una revisione interna</strong>.</li>
+<li>Contattare <strong>il Difensore Civico o la Commissione per l'Accesso</strong>.</li>
+<li>A ogni modo prova a cercare le informazioni <strong>anche in altro modo</strong>.</li>
+</ol>
+
+<h1 id="internal_review">1. Chiedere una revisione interna <a class="hover_a" href="#internal_review">#</a> </h1>
+
+<p>
+<% if !@info_request.nil? %>
+    <%= link_to "Request an internal review", show_response_no_followup_path(:id => @info_request.id, :incoming_message_id => nil) + "?internal_review=1#followup", :class => 'link_button_green' %> and then write a message asking the authority to review your request.
+<% else %>
+    Alla fine della pagina in questione su <%= site_name %> scegli 
+    "Richiedi revisione interna" e scrivi un messaggio di richiesta. 
+    Ricorda di includere un link alla tua richiesta originaria per facilitare il processo.
+<% end %>
+</p>
+
+<h1 id="complaining">2. Contattare il Difensore Civico o la Commissione per l'Accesso <a class="hover_a" href="#complaining">#</a> </h1>
+
+<p>Se non sei soddisfatto, contatta il Difensore Civico regionale o la <a href="http://www.commissioneaccesso.it/">Commmissione per l'Accesso</a>.
+</p>
+
+<p>Per facilitare l'invio delle informazioni rilevanti
+<% if !@info_request.nil? %>
+    includi il link alla tua richiesta
+    <strong><%=h request_url(@info_request) %></strong>
+<% else %>
+    includi il link alla tua richiesta su <%= site_name %>
+<% end %>
+nel tuo ricorso o stampa la pagina della tua richiesta e i relativi allegati.
+</p>
+
+<p><%= site_name %> non ha particolari facilitazioni per la gestione della richiesta, poiché sono i rispettivi uffici a gestire ed effettuare le comunicazioni. 
+Scrivi gli aggiornamenti nelle annotazioni.</p>
+
+<h1 id="other_means">3. Trovare le informazioni seguendo altre strade <a class="hover_a" href="#other_means">#</a> </h1>
+
+<p>Puoi cercare di risolvere la tua richiesta in altri modi o usando altre strade
+
+<ul>
+<li>Invia una <strong>nuova richiesta di accesso</strong> per chiedere documenti più generali o indirettamente collegati alla tua richiesta.
+<a href="<%= help_contact_path %>">Chiedici consiglio</a> se non sai cosa fare.</li>
+<li>Se <strong>altre amministrazioni</strong> o aziende partecipate sono coinvolte, invia la richiesta a loro.</li>
+<li>Scrivi <strong>a un parlamentare locale o che senti ti possa rappresentare</strong> e prova a chiedere il suo aiuto. 
+I membri del Parlamento possono scrivere direttamente a Ministeri e dipartimenti e fare interrogazioni parlamentari.</li>
+<li>Chiedi <strong>a ricercatori e giornalisti</strong> interessati a temi analoghi a quello che ti sta a cuore.  
+Qualcuno di loro talvolta fa ricerche usando questo sito; contatta gli utenti registrati.
+</ul>
+
+
+

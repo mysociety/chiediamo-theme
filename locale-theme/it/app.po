@@ -1,17 +1,20 @@
 # Chiediamo-theme
 # Copyright (C) 2013 mySociety
 # This file is distributed under the same license as the PACKAGE package.
-# 
+#
 # Translators:
-# marcogiustini <info@marcogiustini.info>, 2013
+# Antonella <anapolitano@gmail.com>, 2015
+# louisecrow <louise@mysociety.org>, 2015
+# Marco Giustini <info@marcogiustini.info>, 2013
+# Marco Giustini <info@marcogiustini.info>, 2013
 msgid ""
 msgstr ""
-"Project-Id-Version: chiediamo-theme\n"
+"Project-Id-Version: dirittodisapere-theme\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2013-09-12 17:01+0100\n"
-"PO-Revision-Date: 2013-09-16 04:56+0000\n"
-"Last-Translator: marcogiustini <info@marcogiustini.info>\n"
-"Language-Team: Italian (http://www.transifex.com/projects/p/chiediamo-theme/language/it/)\n"
+"PO-Revision-Date: 2015-02-16 16:24+0000\n"
+"Last-Translator: Antonella <anapolitano@gmail.com>\n"
+"Language-Team: Italian (http://www.transifex.com/projects/p/dirittodisapere-theme/language/it/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -34,7 +37,7 @@ msgid "Contact us"
 msgstr "Contattaci"
 
 msgid "Exercise your right to know."
-msgstr "Usa il tuo diritto di accesso all'informazione."
+msgstr "Usa il tuo diritto di accesso all'informazione"
 
 msgid "FOI officers"
 msgstr "Per l'amministrazione"
@@ -43,10 +46,13 @@ msgid "Help"
 msgstr "Aiuto"
 
 msgid "Making requests"
-msgstr "Fare richieste"
+msgstr "Per fare una richiesta"
 
 msgid "Original theme from {{link}}"
 msgstr "Tema originale di {{link}}"
+
+msgid "Remember: your request and any response will be published on the site!"
+msgstr "Ricorda: la tua richiesta e l'eventuale risposta saranno pubblicate sul sito!"
 
 msgid "Search"
 msgstr "Cerca"
@@ -57,19 +63,19 @@ msgid ""
 msgstr "Tema rilasciato sotto licenza Creative Commons<br/>Attribution Share-Alike CC BY SA 3.0"
 
 msgid "Think of a question for a public authority."
-msgstr "Scrivi una domanda ad un'amministrazione."
+msgstr "Scrivi una domanda a un'amministrazione"
 
 msgid "To get information from public authorities:"
-msgstr "Chiediamo informazioni ad un'amministrazione"
+msgstr "Chiedi informazioni a una pubblica amministrazione"
 
 msgid "We send the question for you"
 msgstr "Noi inviamo la domanda per te"
 
 msgid "We'll notify you when there is an answer."
-msgstr "Ti avvertiamo quando c'è una risposta."
+msgstr "Ti avvertiamo quando c'è una risposta"
 
 msgid "Will they answer?"
-msgstr "Risponderanno?"
+msgstr "Mi risponderanno?"
 
 msgid "Your privacy"
 msgstr "La tua privacy"

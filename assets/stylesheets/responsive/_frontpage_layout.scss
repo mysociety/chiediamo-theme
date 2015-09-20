@@ -103,14 +103,18 @@
       }
 
       #frontpage-lead-button {
-        padding: 7px 10px 7px 10px;
-        background-color: $dds-red;
-        border-radius: 5px;
-        border-bottom: 2px solid #C6C6C5;
+        display: inline-block;
+        border-radius: 0;
+        background-color: #bd1f28;
+        border-style: solid;
+        border-color: #91181f;
+        border-width: 0 0 4px 0;
+        padding: 7px 0 0 0;
 
         a {
-          color: #FFFFFF;
-          font-weight: bold;
+          padding: 7px 10px 7px 10px;
+          color: white;
+          font-weight: normal
         }
       }
     }
@@ -304,7 +308,7 @@
     }
 
     .frontpage-blog-post--image {
-      opacity: .5;
+      opacity: .7;
     }
   }
 }
@@ -331,12 +335,22 @@
     border: 1px solid darken($creamy-grey, 10%);
     border-radius: 5px;
     transition: opacity 0.2s ease-out;
+
+    &.placeholder-image {
+      background-size: 50%;
+      background-position: 50%;
+      background-repeat: no-repeat;
+    }
   }
 
   .frontpage-blog-post--article-link {
     text-decoration: none;
     transition: color 0.2s ease-out;
   }
+
+.more-news-link {
+  font-weight: bold;
+}
 
 // Twitter timeline sidebar
 // ------------------
