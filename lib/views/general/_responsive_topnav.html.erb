@@ -6,7 +6,7 @@
         </li>
 
         <li class="<%= 'selected' if params[:controller] == 'request' and !['new', 'select_authority'].include?(params[:action]) %>">
-          <%= link_to _("Browse requests"), request_list_successful_path %>
+          <%= link_to _("Browse requests"), request_list_all_path %>
         </li>
 
         <li class="<%= 'selected' if params[:controller] == 'public_body' %>">
@@ -14,7 +14,7 @@
         </li>
 
 
-        <li><%= link_to _("Read blog"), 'http://www.dirittodisapere.it/blog' %></li>
+        <li><%= link_to _("Chi Siamo"), ' http://www.dirittodisapere.it/chi-siamo/' %></li>
         <li class="<%= 'selected' if params[:controller] == 'help' %>">
           <%= link_to _("Help"), help_about_path %>
         </li>
