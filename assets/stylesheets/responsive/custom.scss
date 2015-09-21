@@ -19,17 +19,17 @@
 %menu-item {
   text-decoration: none;
   color: $white;
-  background-color: $dds-red;
+  background-color: $chiedi-green;
 
   @include respond-min($main_menu-mobile_menu_cutoff) {
     background-color: transparent;
-    color: transparentize($dds-red, 0.2);
+    color: transparentize($chiedi-green, 0.2);
     @include ie8 {
-      color: $dds-red;
+      color: $chiedi-green;
     }
     &:hover {
       text-decoration: underline;
-      color: $dds-red;
+      color: $chiedi-green;
     }
   }
 }
@@ -56,11 +56,11 @@
 /* Styling if not part of the main menu on larger screens */
 %sub-menu-item {
   @include respond-min($main_menu-mobile_menu_cutoff) {
-    color: transparentize($dds-red, 0.2);
+    color: transparentize($chiedi-green, 0.2);
 
     &:hover {
       background-color: $banner_bg;
-      color: $dds-red;
+      color: $chiedi-green;
     }
   }
 }
@@ -132,12 +132,12 @@ a.link_button_green_large,
 #frontpage-lead-button {
   text-decoration: none;
   color: $white;
-  background-color: darken($dds-red, 5%);
+  background-color: darken($chiedi-green, 5%);
 
   display: inline-block;
   cursor: pointer;
   /* This style is expressed for all borders to avoid triggering an IE9 border rendering bug */
-  border-style: solid; border-color: darken($dds-red, 15%); border-width: 0 0 4px 0;
+  border-style: solid; border-color: darken($chiedi-green, 15%); border-width: 0 0 4px 0;
   border-radius: 0;
   padding: 3px 7px;
   line-height: normal;
@@ -152,9 +152,9 @@ a.link_button_green_large,
 
   &:hover,
   &:focus {
-    background-color: $dds-red;
+    background-color: $chiedi-green;
     text-decoration: none;
-    border-bottom: 4px solid darken($dds-red, 15%);
+    border-bottom: 4px solid darken($chiedi-green, 15%);
   }
 
   &:active {
@@ -343,7 +343,7 @@ a.link_button_green_large {
     @include respond-min($main_menu-mobile_menu_cutoff) {
       a {
         padding: 5px;
-        color: $dds-red;
+        color: $chiedi-green;
       }
       a + a {
         margin-left: 0;
@@ -593,7 +593,7 @@ a.link_to_this {
 
     &:hover {
       a {
-        color: $dds-red !important;
+        color: $chiedi-green !important;
         display: inline;
       }
     }

@@ -63,7 +63,7 @@
       }
 
       h2 {
-        color: $dds-red;
+        color: $chiedi-green;
         font-size: 1.1rem;
         @include ie8 {
           font-size: 1.1em;
@@ -160,13 +160,13 @@
     }
 
     #frontpage-lead-ad {
-      background-color: $dds-red;
+      background-color: $chiedi-green;
       text-align: center;
-      color: lighten($dds-red, 40%);
+      color: lighten($chiedi-green, 40%);
       border-radius: 5px;
       padding: 12px;
       margin-bottom: 12px;
-      box-shadow: 0 2px 0 darken($dds-red, 5%);
+      box-shadow: 0 2px 0 darken($chiedi-green, 5%);
 
       h4 {
         color: $white;
