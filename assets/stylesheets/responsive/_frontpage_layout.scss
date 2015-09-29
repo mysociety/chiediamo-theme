@@ -105,9 +105,9 @@
       #frontpage-lead-button {
         display: inline-block;
         border-radius: 0;
-        background-color: #bd1f28;
+        background-color: $chiedi-light-green;
         border-style: solid;
-        border-color: #91181f;
+        border-color: darken($chiedi-light-green, 5%);
         border-width: 0 0 4px 0;
         padding: 7px 0 0 0;
 
@@ -160,13 +160,13 @@
     }
 
     #frontpage-lead-ad {
-      background-color: $chiedi-green;
+      background-color: $chiedi-light-green;
       text-align: center;
-      color: lighten($chiedi-green, 40%);
+      color: $white;
       border-radius: 5px;
       padding: 12px;
       margin-bottom: 12px;
-      box-shadow: 0 2px 0 darken($chiedi-green, 5%);
+      box-shadow: 0 2px 0 darken($chiedi-light-green, 10%);
 
       h4 {
         color: $white;

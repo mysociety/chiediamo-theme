@@ -19,13 +19,13 @@
 %menu-item {
   text-decoration: none;
   color: $white;
-  background-color: $chiedi-green;
+  background-color: $chiedi-light-green;
 
   @include respond-min($main_menu-mobile_menu_cutoff) {
     background-color: transparent;
-    color: transparentize($chiedi-green, 0.2);
+    color: transparentize($chiedi-light-green, 0.2);
     @include ie8 {
-      color: $chiedi-green;
+      color: $chiedi-light-green;
     }
     &:hover {
       text-decoration: underline;
@@ -56,11 +56,11 @@
 /* Styling if not part of the main menu on larger screens */
 %sub-menu-item {
   @include respond-min($main_menu-mobile_menu_cutoff) {
-    color: transparentize($chiedi-green, 0.2);
+    color: transparentize($chiedi-light-green, 0.2);
 
     &:hover {
       background-color: $banner_bg;
-      color: $chiedi-green;
+      color: $chiedi-light-green;
     }
   }
 }
@@ -132,12 +132,12 @@ a.link_button_green_large,
 #frontpage-lead-button {
   text-decoration: none;
   color: $white;
-  background-color: darken($chiedi-green, 5%);
+  background-color: $chiedi-light-green;
 
   display: inline-block;
   cursor: pointer;
   /* This style is expressed for all borders to avoid triggering an IE9 border rendering bug */
-  border-style: solid; border-color: darken($chiedi-green, 15%); border-width: 0 0 4px 0;
+  border-style: solid; border-color: darken($chiedi-light-green, 15%); border-width: 0 0 4px 0;
   border-radius: 0;
   padding: 3px 7px;
   line-height: normal;
@@ -152,7 +152,7 @@ a.link_button_green_large,
 
   &:hover,
   &:focus {
-    background-color: $chiedi-green;
+    background-color: $chiedi-light-green;
     text-decoration: none;
     border-bottom: 4px solid darken($chiedi-green, 15%);
   }
@@ -628,7 +628,7 @@ dt {
 
 #right_column_flip {
   h2 {
-    font-size: 1.5em;
+    font-size: 1em;
   }
 }
 
