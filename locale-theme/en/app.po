@@ -1,56 +1,78 @@
-msgid "A project by"
+# Chiediamo-theme
+# Copyright (C) 2013 mySociety
+# This file is distributed under the same license as the PACKAGE package.
+#
+# Translators:
+msgid ""
 msgstr ""
+"Project-Id-Version: alaveteli\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2013-09-12 17:01+0100\n"
+"PO-Revision-Date: 2015-02-16 12:23+0000\n"
+"Last-Translator: louisecrow <louise@mysociety.org>\n"
+"Language-Team: English (http://www.transifex.com/mysociety/dirittodisapere-theme/language/en/)\n"
+"Language: en\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+msgid "A project by"
+msgstr "A project by"
 
 msgid "API"
-msgstr ""
+msgstr "API"
 
 msgid "About the software"
-msgstr ""
+msgstr "About the software"
 
 msgid "Ask"
-msgstr ""
+msgstr "Ask"
 
 msgid "Contact us"
-msgstr ""
+msgstr "Contact us"
 
 msgid "Exercise your right to know."
-msgstr ""
+msgstr "Exercise your right to know."
 
 msgid "FOI officers"
-msgstr ""
+msgstr "FOI officers"
 
 msgid "Help"
-msgstr ""
+msgstr "Help"
 
 msgid "Making requests"
-msgstr ""
+msgstr "Making requests"
 
 msgid "Original theme from {{link}}"
-msgstr ""
+msgstr "Original theme from {{link}}"
+
+msgid "Remember: your request and any response will be published on the site!"
+msgstr "Remember: your request and any response will be published on the site!"
 
 msgid "Search"
-msgstr ""
+msgstr "Search"
 
 msgid "Theme licensed under CC BY SA 3.0<br/>Creative Commons Attribution Share-Alike"
-msgstr ""
+msgstr "Theme licensed under CC BY SA 3.0<br/>Creative Commons Attribution Share-Alike"
 
 msgid "Think of a question for a public authority."
-msgstr ""
+msgstr "Think of a question for a public authority."
 
 msgid "To get information from public authorities:"
-msgstr ""
+msgstr "To get information from public authorities:"
 
 msgid "We send the question for you"
-msgstr ""
+msgstr "We send the question for you"
 
 msgid "We'll notify you when there is an answer."
-msgstr ""
+msgstr "We'll notify you when there is an answer."
 
 msgid "Will they answer?"
-msgstr ""
+msgstr "Will they answer?"
 
 msgid "Your privacy"
-msgstr ""
+msgstr "Your privacy"
 
 msgid "unknown status "
-msgstr ""
+msgstr "unknown status "
