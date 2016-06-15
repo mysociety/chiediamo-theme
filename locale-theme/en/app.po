@@ -7,15 +7,24 @@ msgid ""
 msgstr ""
 "Project-Id-Version: alaveteli\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2013-09-12 17:01+0100\n"
-"PO-Revision-Date: 2015-02-16 12:23+0000\n"
-"Last-Translator: louisecrow <louise@mysociety.org>\n"
+"POT-Creation-Date: 2016-06-15 12:01+0000\n"
+"PO-Revision-Date: 2016-06-15 12:04+0000\n"
+"Last-Translator: Liz Conlan <liz@mysociety.org>\n"
 "Language-Team: English (http://www.transifex.com/mysociety/dirittodisapere-theme/language/en/)\n"
 "Language: en\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+msgid "(hide)"
+msgstr "(hide)"
+
+msgid "(show)"
+msgstr "(show)"
+
+msgid "2. Ask for Information"
+msgstr "2. Ask for Information"
 
 msgid "A project by"
 msgstr "A project by"
@@ -26,11 +35,32 @@ msgstr "API"
 msgid "About the software"
 msgstr "About the software"
 
+msgid "Air, water, soil, land, flora and fauna (including how these affect human beings)"
+msgstr "Air, water, soil, land, flora and fauna (including how these affect human beings)"
+
 msgid "Ask"
 msgstr "Ask"
 
+msgid "Browse <a href='{{url}}'>other requests</a> for examples of how to word your request."
+msgstr "Browse <a href='{{url}}'>other requests</a> for examples of how to word your request."
+
+msgid "Browse <a href='{{url}}'>other requests</a> to '{{public_body_name}}' for examples of how to word your request."
+msgstr "Browse <a href='{{url}}'>other requests</a> to '{{public_body_name}}' for examples of how to word your request."
+
+msgid "Browse requests"
+msgstr "Browse requests"
+
 msgid "Contact us"
 msgstr "Contact us"
+
+msgid "Cultural sites and built structures (as they may be affected by the environmental factors listed above)"
+msgstr "Cultural sites and built structures (as they may be affected by the environmental factors listed above)"
+
+msgid "Everything that you enter on this page will be <strong>displayed publicly</strong> on this website forever (<a href=\"{{url}}\">why?</a>)."
+msgstr "Everything that you enter on this page will be <strong>displayed publicly</strong> on this website forever (<a href=\"{{url}}\">why?</a>)."
+
+msgid "Everything that you enter on this page, including <strong>your name</strong>, will be <strong>displayed publicly</strong> on this website forever (<a href=\"{{url}}\">why?</a>)."
+msgstr "Everything that you enter on this page, including <strong>your name</strong>, will be <strong>displayed publicly</strong> on this website forever (<a href=\"{{url}}\">why?</a>)."
 
 msgid "Exercise your right to know."
 msgstr "Exercise your right to know."
@@ -41,17 +71,59 @@ msgstr "FOI officers"
 msgid "Help"
 msgstr "Help"
 
+msgid "However, you have the right to request environmental information under a different law (<a href=\"{{url}}\">explanation</a>)."
+msgstr "However, you have the right to request environmental information under a different law (<a href=\"{{url}}\">explanation</a>)."
+
+msgid "Human health and safety"
+msgstr "Human health and safety"
+
+msgid "If you are thinking of using a pseudonym, please <a href=\"{{url}}\">read this first</a>."
+msgstr "If you are thinking of using a pseudonym, please <a href=\"{{url}}\">read this first</a>."
+
+msgid "Information on emissions and discharges (e.g. noise, energy, radiation, waste materials)"
+msgstr "Information on emissions and discharges (e.g. noise, energy, radiation, waste materials)"
+
+msgid "Make a request"
+msgstr "Make a request"
+
+msgid "Make an {{law_used_short}} request"
+msgstr "Make an {{law_used_short}} request"
+
+msgid "Make an {{law_used_short}} request to '{{public_body_name}}'"
+msgstr "Make an {{law_used_short}} request to '{{public_body_name}}'"
+
 msgid "Making requests"
 msgstr "Making requests"
 
 msgid "Original theme from {{link}}"
 msgstr "Original theme from {{link}}"
 
+msgid "Plans and administrative measures that affect these matters"
+msgstr "Plans and administrative measures that affect these matters"
+
+msgid "Please ask for environmental information only"
+msgstr "Please ask for environmental information only"
+
+msgid "Please only request information that comes under those categories, <strong>do not waste your time</strong> or the time of the public authority by requesting unrelated information."
+msgstr "Please only request information that comes under those categories, <strong>do not waste your time</strong> or the time of the public authority by requesting unrelated information."
+
+msgid "Preview your public request"
+msgstr "Preview your public request"
+
 msgid "Remember: your request and any response will be published on the site!"
 msgstr "Remember: your request and any response will be published on the site!"
 
-msgid "Search"
-msgstr "Search"
+msgid "Special note for this authority!"
+msgstr "Special note for this authority!"
+
+msgid "Summary:"
+msgstr "Summary:"
+
+msgid "Tags (separated by a space):"
+msgstr "Tags (separated by a space):"
+
+msgid "The Freedom of Information Act <strong>does not apply</strong> to"
+msgstr "The Freedom of Information Act <strong>does not apply</strong> to"
 
 msgid "Theme licensed under CC BY SA 3.0<br/>Creative Commons Attribution Share-Alike"
 msgstr "Theme licensed under CC BY SA 3.0<br/>Creative Commons Attribution Share-Alike"
@@ -59,8 +131,17 @@ msgstr "Theme licensed under CC BY SA 3.0<br/>Creative Commons Attribution Share
 msgid "Think of a question for a public authority."
 msgstr "Think of a question for a public authority."
 
+msgid "This covers a very wide spectrum of information about the state of the <strong>natural and built environment</strong>, such as:"
+msgstr "This covers a very wide spectrum of information about the state of the <strong>natural and built environment</strong>, such as:"
+
 msgid "To get information from public authorities:"
 msgstr "To get information from public authorities:"
+
+msgid "To:"
+msgstr "To:"
+
+msgid "View authorities"
+msgstr "View authorities"
 
 msgid "We send the question for you"
 msgstr "We send the question for you"
@@ -71,8 +152,23 @@ msgstr "We'll notify you when there is an answer."
 msgid "Will they answer?"
 msgstr "Will they answer?"
 
+msgid "You already created the same batch of requests on {{date}}. You can either view the <a href=\"{{existing_batch}}\">existing batch</a>, or edit the details below to make a new but similar batch of requests."
+msgstr "You already created the same batch of requests on {{date}}. You can either view the <a href=\"{{existing_batch}}\">existing batch</a>, or edit the details below to make a new but similar batch of requests."
+
 msgid "Your privacy"
 msgstr "Your privacy"
 
+msgid "Your request:"
+msgstr "Your request:"
+
+msgid "Your selected authorities"
+msgstr "Your selected authorities"
+
+msgid "a one line summary of the information you are requesting, e.g."
+msgstr "a one line summary of the information you are requesting, e.g."
+
 msgid "unknown status "
 msgstr "unknown status "
+
+msgid "{{existing_request_user}} already created the same request on {{date}}. You can either view the <a href=\"{{existing_request}}\">existing request</a>, or edit the details below to make a new but similar request."
+msgstr "{{existing_request_user}} already created the same request on {{date}}. You can either view the <a href=\"{{existing_request}}\">existing request</a>, or edit the details below to make a new but similar request."
