@@ -7,14 +7,8 @@
 Rails.configuration.to_prepare do
   # Front page needs some additional info
   GeneralController.class_eval do
-      # Make sure it doesn't break if blog is not available
-      def frontpage
-          begin
-              blog
-          rescue
-              @blog_items = []
-              @twitter_user = MySociety::Config.get('TWITTER_USERNAME', '')
-          end
-      end
+    def frontpage
+      blog
+    end
   end
 end
