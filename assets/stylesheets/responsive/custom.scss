@@ -18,18 +18,18 @@
 /* General styling of nav menu items */
 %menu-item {
   text-decoration: none;
-  color: $white;
-  background-color: $chiedi-light-green;
+  color: $color_white;
+  background-color: $color_chiedi_light_green;
 
   @include respond-min($main_menu-mobile_menu_cutoff) {
     background-color: transparent;
-    color: transparentize($chiedi-light-green, 0.2);
+    color: transparentize($color_chiedi_light_green, 0.2);
     @include ie8 {
-      color: $chiedi-light-green;
+      color: $color_chiedi_light_green;
     }
     &:hover {
       text-decoration: underline;
-      color: $chiedi-green;
+      color: $color_chiedi_green;
     }
   }
 }
@@ -46,9 +46,9 @@
   }
 
   @include respond-min ($main_menu-mobile_menu_cutoff) {
-    background-color: $white;
+    background-color: $color_white;
     &:hover{
-      background-color: $white;
+      background-color: $color_white;
     }
   }
 }
@@ -56,11 +56,11 @@
 /* Styling if not part of the main menu on larger screens */
 %sub-menu-item {
   @include respond-min($main_menu-mobile_menu_cutoff) {
-    color: transparentize($chiedi-light-green, 0.2);
+    color: transparentize($color_chiedi_light_green, 0.2);
 
     &:hover {
       background-color: $banner_bg;
-      color: $chiedi-light-green;
+      color: $color_chiedi_light_green;
     }
   }
 }
@@ -131,13 +131,13 @@ a.link_button_green,
 a.link_button_green_large,
 #frontpage-lead-button {
   text-decoration: none;
-  color: $white;
-  background-color: $chiedi-light-green;
+  color: $color_white;
+  background-color: $color_chiedi_light_green;
 
   display: inline-block;
   cursor: pointer;
   /* This style is expressed for all borders to avoid triggering an IE9 border rendering bug */
-  border-style: solid; border-color: darken($chiedi-light-green, 15%); border-width: 0 0 4px 0;
+  border-style: solid; border-color: darken($color_chiedi_light_green, 15%); border-width: 0 0 4px 0;
   border-radius: 0;
   padding: 3px 7px;
   line-height: normal;
@@ -152,9 +152,9 @@ a.link_button_green_large,
 
   &:hover,
   &:focus {
-    background-color: $chiedi-light-green;
+    background-color: $color_chiedi_light_green;
     text-decoration: none;
-    border-bottom: 4px solid darken($chiedi-green, 15%);
+    border-bottom: 4px solid darken($color_chiedi_green, 15%);
   }
 
   &:active {
@@ -210,7 +210,7 @@ a.link_button_green_large {
 
 #topnav {
   background-color: $main_menu-bg;
-  border-top: 1px solid darken($creamy-grey, 10%);
+  border-top: 1px solid darken($color_creamy_grey, 10%);
   padding-bottom: 0;
 
   @include respond-min($main_menu-mobile_menu_cutoff) {
@@ -229,7 +229,7 @@ a.link_button_green_large {
   li + li:not(#navigation_search) {
     border-left: 0;
     @include respond-min($main_menu-mobile_menu_cutoff) {
-      border-left: 1px solid $creamy-grey;
+      border-left: 1px solid $color_creamy_grey;
     }
   }
   /* Show which section is currently selected */
@@ -343,7 +343,7 @@ a.link_button_green_large {
     @include respond-min($main_menu-mobile_menu_cutoff) {
       a {
         padding: 5px;
-        color: $chiedi-green;
+        color: $color_chiedi_green;
       }
       a + a {
         margin-left: 0;
@@ -604,7 +604,7 @@ a.link_to_this {
 
     &:hover {
       a {
-        color: $chiedi-green !important;
+        color: $color_chiedi_green !important;
         display: inline;
       }
     }
@@ -620,7 +620,7 @@ a.link_to_this {
 dt {
   color: $heading-color;
   font-weight: 700;
-  
+
   & + dd {
     margin-bottom: 20px;
   }
