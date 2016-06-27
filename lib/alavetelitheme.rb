@@ -1,3 +1,4 @@
+# -*- encoding : utf-8 -*-
 THEME_NAME = File.split(File.expand_path("../..", __FILE__))[1].split('-')[0]
 class ActionController::Base
     # The following prepends the path of the current theme's views to

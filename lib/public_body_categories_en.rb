@@ -1,3 +1,4 @@
+# -*- encoding : utf-8 -*-
 # The PublicBodyCategories structure works like this:
 # [
 #   "Main category name",
