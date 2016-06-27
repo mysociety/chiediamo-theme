@@ -89,7 +89,7 @@ msgid "Information on emissions and discharges (e.g. noise, energy, radiation, w
 msgstr ""
 
 msgid "Make a request"
-msgstr ""
+msgstr "Inserisci richiesta"
 
 msgid "Make an {{law_used_short}} request"
 msgstr ""
