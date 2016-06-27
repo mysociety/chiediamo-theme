@@ -21,7 +21,7 @@
     @include ie8 {
       color: $color_chiedi_light_green;
     }
-    &:hover {
+    &:hover, &:focus {
       text-decoration: underline;
       color: $color_chiedi_green;
     }
@@ -52,7 +52,7 @@
   @include respond-min($main_menu-mobile_menu_cutoff) {
     color: transparentize($color_chiedi_light_green, 0.2);
 
-    &:hover {
+    &:hover, &:focus {
       background-color: $banner_bg;
       color: $color_chiedi_light_green;
     }
@@ -73,12 +73,14 @@ body {
 }
 
 a {
-  color: $link-color;
-
-  &:hover,
-  &:active,
+  &:link,
   &:visited {
     color: $link-color;
+  }
+  &:hover,
+  &:active,
+  &:focus {
+    color: lighten($link-color, 10%);
   }
 }
 
@@ -215,7 +217,7 @@ a.link_button_green_large {
 #navigation {
   border-bottom: none;
 
-  a {
+  a, a:link {
     @extend %menu-item;
     font-weight: bold;
   }
@@ -251,7 +253,7 @@ a.link_button_green_large {
       transition: opacity 0.3s ease-out;
     }
 
-    &:hover {
+    &:hover, &:focus {
       label {
         opacity: 0.9;
       }
@@ -272,7 +274,7 @@ a.link_button_green_large {
     border-radius: 0;
     font-size: inherit;
 
-    &:focus {
+    &:focus, &:hover {
       box-shadow: 0 0 4px #ccc;
     }
   }
