@@ -1,3 +1,4 @@
+# -*- encoding : utf-8 -*-
 PublicBodyCategories.add(:it, [
         "Miscellaneous",
             [ "ministeri", "Ministeri", "ministeri" ],
