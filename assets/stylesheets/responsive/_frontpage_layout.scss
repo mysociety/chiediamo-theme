@@ -173,7 +173,7 @@
         line-height: 1.1rem;
       }
       a {
-        color: #fff;
+        color: $color_white;
       }
     }
 
@@ -194,71 +194,6 @@
   }
 }
 
-// Search box
-// ------------------
-#frontpage-search-box {
-  @include grid-row();
-  background-color: $color_creamy_grey;
-  border-radius: 5px;
-
-  #frontpage-search-label {
-    display: none;
-    @include respond-min($main_menu-mobile_menu_cutoff) {
-      margin-top: 0;
-      @include grid-column(4);
-      display: block;
-      @include ie8 {
-        padding-right: 0.9375em;
-      }
-      @include lte-ie7 {
-        width: 17.438em;
-      }
-    }
-  }
-
-  h4 {
-    font-weight: bold;
-    font-size: 1em;
-    @include respond-min($main_menu-mobile_menu_cutoff) {
-      font-size: 1.2rem;
-    }
-    @include ie8 {
-      font-size: 1.2em;
-    }
-
-    color: #3C3C3B;
-    line-height: 1.1;
-    text-align: right;
-    margin: 20px 0;
-  }
-
-  #frontpage-search-form {
-    @include grid-column(12);
-    @include respond-min($main_menu-mobile_menu_cutoff) {
-      @include grid-column(8);
-      form {
-        margin: 0;
-      }
-      @include ie8 {
-        padding-left: 0.9375em;
-      }
-      @include lte-ie7 {
-        width: 36.813em;
-      }
-    }
-  }
-
-  input {
-    margin: 30px 0;
-  }
-  input[type="text"] {
-    width: 70%;
-    margin-right: 5px;
-  }
-  input[type="submit"] {
-    width: 25%;
-  }
-}
 
 // News
 // ------------------
