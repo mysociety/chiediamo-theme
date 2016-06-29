@@ -1,10 +1,4 @@
 // ==================
-// VARIABLES
-// ==================
-
-@import "partials/variables";
-
-// ==================
 // FOOTER LAYOUT
 // ==================
 
@@ -13,12 +7,12 @@
     a,
     a:visited,
     a:active {
-      color: $chiedi-green;
-      color: transparentize($chiedi-green, 0.2);
+      color: $color_chiedi_green;
+      color: transparentize($color_chiedi_green, 0.2);
     }
 
     a:hover {
-      color: $chiedi-green;
+      color: $color_chiedi_green;
     }
   }
 }

@@ -5,21 +5,31 @@
 # Translators:
 # Antonella <anapolitano@gmail.com>, 2015
 # louisecrow <louise@mysociety.org>, 2015
+# louisecrow <louise@mysociety.org>, 2015
 # Marco Giustini <info@marcogiustini.info>, 2013
 # Marco Giustini <info@marcogiustini.info>, 2013
 msgid ""
 msgstr ""
-"Project-Id-Version: dirittodisapere-theme\n"
+"Project-Id-Version: alaveteli\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2013-09-12 17:01+0100\n"
-"PO-Revision-Date: 2015-02-16 16:24+0000\n"
-"Last-Translator: Antonella <anapolitano@gmail.com>\n"
-"Language-Team: Italian (http://www.transifex.com/projects/p/dirittodisapere-theme/language/it/)\n"
+"POT-Creation-Date: 2016-06-15 12:01+0000\n"
+"PO-Revision-Date: 2016-06-15 12:04+0000\n"
+"Last-Translator: Liz Conlan <liz@mysociety.org>\n"
+"Language-Team: Italian (http://www.transifex.com/mysociety/dirittodisapere-theme/language/it/)\n"
+"Language: it\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Language: it\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+msgid "(hide)"
+msgstr ""
+
+msgid "(show)"
+msgstr ""
+
+msgid "2. Ask for Information"
+msgstr ""
 
 msgid "A project by"
 msgstr "Un progetto di"
@@ -30,11 +40,32 @@ msgstr "API"
 msgid "About the software"
 msgstr "Informazioni sul software"
 
+msgid "Air, water, soil, land, flora and fauna (including how these affect human beings)"
+msgstr ""
+
 msgid "Ask"
 msgstr "Chiedi"
 
+msgid "Browse <a href='{{url}}'>other requests</a> for examples of how to word your request."
+msgstr ""
+
+msgid "Browse <a href='{{url}}'>other requests</a> to '{{public_body_name}}' for examples of how to word your request."
+msgstr ""
+
+msgid "Browse requests"
+msgstr ""
+
 msgid "Contact us"
 msgstr "Contattaci"
+
+msgid "Cultural sites and built structures (as they may be affected by the environmental factors listed above)"
+msgstr ""
+
+msgid "Everything that you enter on this page will be <strong>displayed publicly</strong> on this website forever (<a href=\"{{url}}\">why?</a>)."
+msgstr ""
+
+msgid "Everything that you enter on this page, including <strong>your name</strong>, will be <strong>displayed publicly</strong> on this website forever (<a href=\"{{url}}\">why?</a>)."
+msgstr "Tutto ciò che scrivi in questa pagina, incluso <strong>il tuo nome</strong> saranno <strong>pubblicate</strong> su questo sito e saranno visibili (<a href=\"{{url}}\">perché?</a>)."
 
 msgid "Exercise your right to know."
 msgstr "Usa il tuo diritto di accesso all'informazione"
@@ -45,28 +76,77 @@ msgstr "Per l'amministrazione"
 msgid "Help"
 msgstr "Aiuto"
 
+msgid "However, you have the right to request environmental information under a different law (<a href=\"{{url}}\">explanation</a>)."
+msgstr ""
+
+msgid "Human health and safety"
+msgstr ""
+
+msgid "If you are thinking of using a pseudonym, please <a href=\"{{url}}\">read this first</a>."
+msgstr ""
+
+msgid "Information on emissions and discharges (e.g. noise, energy, radiation, waste materials)"
+msgstr ""
+
+msgid "Make a request"
+msgstr "Inserisci richiesta"
+
+msgid "Make an {{law_used_short}} request"
+msgstr ""
+
+msgid "Make an {{law_used_short}} request to '{{public_body_name}}'"
+msgstr ""
+
 msgid "Making requests"
 msgstr "Per fare una richiesta"
 
 msgid "Original theme from {{link}}"
 msgstr "Tema originale di {{link}}"
 
+msgid "Plans and administrative measures that affect these matters"
+msgstr ""
+
+msgid "Please ask for environmental information only"
+msgstr ""
+
+msgid "Please only request information that comes under those categories, <strong>do not waste your time</strong> or the time of the public authority by requesting unrelated information."
+msgstr ""
+
+msgid "Preview your public request"
+msgstr ""
+
 msgid "Remember: your request and any response will be published on the site!"
 msgstr "Ricorda: la tua richiesta e l'eventuale risposta saranno pubblicate sul sito!"
 
-msgid "Search"
-msgstr "Cerca"
+msgid "Special note for this authority!"
+msgstr ""
 
-msgid ""
-"Theme licensed under CC BY SA 3.0<br/>Creative Commons Attribution Share-"
-"Alike"
+msgid "Summary:"
+msgstr ""
+
+msgid "Tags (separated by a space):"
+msgstr ""
+
+msgid "The Freedom of Information Act <strong>does not apply</strong> to"
+msgstr ""
+
+msgid "Theme licensed under CC BY SA 3.0<br/>Creative Commons Attribution Share-Alike"
 msgstr "Tema rilasciato sotto licenza Creative Commons<br/>Attribution Share-Alike CC BY SA 3.0"
 
 msgid "Think of a question for a public authority."
 msgstr "Scrivi una domanda a un'amministrazione"
 
+msgid "This covers a very wide spectrum of information about the state of the <strong>natural and built environment</strong>, such as:"
+msgstr ""
+
 msgid "To get information from public authorities:"
 msgstr "Chiedi informazioni a una pubblica amministrazione"
+
+msgid "To:"
+msgstr ""
+
+msgid "View authorities"
+msgstr ""
 
 msgid "We send the question for you"
 msgstr "Noi inviamo la domanda per te"
@@ -77,8 +157,23 @@ msgstr "Ti avvertiamo quando c'è una risposta"
 msgid "Will they answer?"
 msgstr "Mi risponderanno?"
 
+msgid "You already created the same batch of requests on {{date}}. You can either view the <a href=\"{{existing_batch}}\">existing batch</a>, or edit the details below to make a new but similar batch of requests."
+msgstr ""
+
 msgid "Your privacy"
 msgstr "La tua privacy"
 
+msgid "Your request:"
+msgstr ""
+
+msgid "Your selected authorities"
+msgstr ""
+
+msgid "a one line summary of the information you are requesting, e.g."
+msgstr "un titolo di una riga relativo all'informazione che vuoi richiedere, per esempio,"
+
 msgid "unknown status "
 msgstr "Status sconosciuto"
+
+msgid "{{existing_request_user}} already created the same request on {{date}}. You can either view the <a href=\"{{existing_request}}\">existing request</a>, or edit the details below to make a new but similar request."
+msgstr ""

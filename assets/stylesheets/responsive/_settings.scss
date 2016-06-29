@@ -1,0 +1,89 @@
+$main_menu-mobile_menu_cutoff: 58em;
+$row-width: 64em;
+$body-font-family: "Helvetica Neue", Arial, Helvetica, Helmet, Freesans, sans-serif;
+$form-label-font-color: #333333;
+$base-font-size: 16px;
+
+// Specify the filename and dimensions of your logo file here
+$logo-filename: 'logo.png';
+$logo-highdpi-filename: 'logo@2.png'; //Should be at least 2x the size, in the same proportions
+$logo-width: 168px;
+$logo-height: 74px;
+
+// ==================
+// VARIABLES
+// ==================
+
+// Color palettes
+// ------------------
+
+// Old palette
+$color_dark_blue: #071339;
+$color_medium_blue: #2a4072;
+$color_lighter_blue: #475e90;
+$color_even_lighter_blue: #7e92bf;
+$color_lightest_blue: #cfd7e4;
+$color_darkest_blue: #132555;
+
+// DdS palette
+$color_dds_red: #d3232d;
+$color_dds_beige: #fbfbd7;
+$color_creamy_grey: #f5f5f2;
+$color_chiedi_green: #11611a;
+$color_chiedi_light_green: #24b632;
+
+// Generic colors
+$color_charcoal: #333;
+$color_dark_grey: #3c3c3b;
+$color_medium_grey: #999;
+$color_light_grey: #ececec;
+$color_lighter_grey: #d9d9d9;
+$color_white: #fff;
+
+// Components color
+$locale-bg: $color_charcoal;
+$locale-color: $color_medium_grey;
+$locale-hover-color: $color_white;
+$link-color: $color_chiedi_green;
+$body-font-color: $color_charcoal;
+$body-bg: $color_white;
+$button-bg: $color_lighter_blue;
+$button-color: $color_white;
+$heading-color: $color_charcoal;
+
+$main_menu-bg: $color_white;
+$main_menu-search_text: $color_charcoal;
+$main_menu-link_text: $color_dark_blue;
+$main_menu-search_bg: $color_white;
+$banner_bg: $color_creamy_grey;
+
+$main_menu-link_bg: $color_white;
+$main_menu-active_link_text: $color_dark_blue;
+$main_menu-active_link_bg: $color_chiedi_green;
+$footer-bg: $color_lighter_grey;
+$footer-color: $main_menu-link_text;
+$footer-link-color: $color_lighter_blue;
+
+$incoming-correspondence-color: #0a9fc0;
+$outgoing-correspondence-color: #0b6298;
+$correspondence-bg: $color_white;
+$correspondence-shadow: #d3d3d3;
+
+$status-success: #aab26e;
+$status-failure: #ff7959;
+$status-pending: #e69e5d;
+
+$notice-bg: #D7DABD;
+$notice-border: #839310;
+
+$error-bg: #ebc3a9;
+$error-border: #a1432c;
+
+$action-bg: #edd3b8;
+$action-border: #d69457;
+
+// Fonts
+// ------------------
+
+$font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+$sans-serif-font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
