@@ -12,9 +12,9 @@ msgid ""
 msgstr ""
 "Project-Id-Version: alaveteli\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-06-15 12:01+0000\n"
-"PO-Revision-Date: 2016-06-15 16:44+0000\n"
-"Last-Translator: Liz Conlan <liz@mysociety.org>\n"
+"POT-Creation-Date: 2016-07-01 11:14+0000\n"
+"PO-Revision-Date: 2016-07-01 11:14+0000\n"
+"Last-Translator: Gareth Rees <gareth@mysociety.org>\n"
 "Language-Team: Italian (http://www.transifex.com/mysociety/dirittodisapere-theme/language/it/)\n"
 "Language: it\n"
 "MIME-Version: 1.0\n"
@@ -28,7 +28,13 @@ msgstr ""
 msgid "(show)"
 msgstr ""
 
-msgid "2. Ask for Information"
+msgid "<a href=\"{{url}}\">Thinking of using a pseudonym?</a>"
+msgstr ""
+
+msgid "<strong>Note:</strong> Because we're testing, requests are being sent to {{email}} rather than to the actual authority."
+msgstr ""
+
+msgid "A one line summary of the information you are requesting, e.g."
 msgstr ""
 
 msgid "A project by"
@@ -40,7 +46,7 @@ msgstr "API"
 msgid "About the software"
 msgstr "Informazioni sul software"
 
-msgid "Air, water, soil, land, flora and fauna (including how these affect human beings)"
+msgid "Air, water, soil, land, flora and fauna (including how these effect human beings)"
 msgstr ""
 
 msgid "Ask"
@@ -64,8 +70,8 @@ msgstr ""
 msgid "Everything that you enter on this page will be <strong>displayed publicly</strong> on this website forever (<a href=\"{{url}}\">why?</a>)."
 msgstr ""
 
-msgid "Everything that you enter on this page, including <strong>your name</strong>, will be <strong>displayed publicly</strong> on this website forever (<a href=\"{{url}}\">why?</a>)."
-msgstr "Tutto ciò che scrivi in questa pagina, incluso <strong>il tuo nome</strong> saranno <strong>pubblicate</strong> su questo sito e saranno visibili (<a href=\"{{url}}\">perché?</a>)."
+msgid "Everything that you enter on this page, including <strong>your name</strong>, will be <strong>displayed publicly</strong> on this website <a href=\"{{url}}\">forever</a>"
+msgstr ""
 
 msgid "Exercise your right to know."
 msgstr "Usa il tuo diritto di accesso all'informazione"
@@ -76,13 +82,10 @@ msgstr "Per l'amministrazione"
 msgid "Help"
 msgstr "Aiuto"
 
-msgid "However, you have the right to request environmental information under a different law (<a href=\"{{url}}\">explanation</a>)."
+msgid "However, you have the right to request environmental information under a different law"
 msgstr ""
 
 msgid "Human health and safety"
-msgstr ""
-
-msgid "If you are thinking of using a pseudonym, please <a href=\"{{url}}\">read this first</a>."
 msgstr ""
 
 msgid "Information on emissions and discharges (e.g. noise, energy, radiation, waste materials)"
@@ -118,7 +121,7 @@ msgstr ""
 msgid "Remember: your request and any response will be published on the site!"
 msgstr "Ricorda: la tua richiesta e l'eventuale risposta saranno pubblicate sul sito!"
 
-msgid "Special note for this authority!"
+msgid "Search"
 msgstr ""
 
 msgid "Summary:"
@@ -169,8 +172,8 @@ msgstr ""
 msgid "Your selected authorities"
 msgstr ""
 
-msgid "a one line summary of the information you are requesting, e.g."
-msgstr "un titolo di una riga relativo all'informazione che vuoi richiedere, per esempio,"
+msgid "type your search term here"
+msgstr ""
 
 msgid "unknown status "
 msgstr "Status sconosciuto"
