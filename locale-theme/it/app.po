@@ -14,7 +14,7 @@ msgstr ""
 "Project-Id-Version: alaveteli\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2016-07-01 11:14+0000\n"
-"PO-Revision-Date: 2016-07-01 11:18+0000\n"
+"PO-Revision-Date: 2016-07-01 11:20+0000\n"
 "Last-Translator: Gareth Rees <gareth@mysociety.org>\n"
 "Language-Team: Italian (http://www.transifex.com/mysociety/dirittodisapere-theme/language/it/)\n"
 "Language: it\n"
@@ -93,7 +93,7 @@ msgid "Information on emissions and discharges (e.g. noise, energy, radiation, w
 msgstr ""
 
 msgid "Make a request"
-msgstr ""
+msgstr "Inserisci richiesta"
 
 msgid "Make an {{law_used_short}} request"
 msgstr ""
