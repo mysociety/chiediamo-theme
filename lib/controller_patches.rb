@@ -1,3 +1,4 @@
+# -*- encoding : utf-8 -*-
 # Add a callback - to be executed before each request in development,
 # and at startup in production - to patch existing app classes.
 # Doing so in init/environment.rb wouldn't work in development, since
@@ -7,14 +8,8 @@
 Rails.configuration.to_prepare do
   # Front page needs some additional info
   GeneralController.class_eval do
-      # Make sure it doesn't break if blog is not available
-      def frontpage
-          begin
-              blog
-          rescue
-              @blog_items = []
-              @twitter_user = MySociety::Config.get('TWITTER_USERNAME', '')
-          end
-      end
+    def frontpage
+      blog
+    end
   end
 end

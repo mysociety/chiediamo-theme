@@ -1,10 +1,4 @@
 // ==================
-// VARIABLES
-// ==================
-
-@import "partials/variables";
-
-// ==================
 // MIXIN STYLES
 // ==================
 
@@ -18,18 +12,18 @@
 /* General styling of nav menu items */
 %menu-item {
   text-decoration: none;
-  color: $white;
-  background-color: $chiedi-light-green;
+  color: $color_white;
+  background-color: $color_chiedi_light_green;
 
   @include respond-min($main_menu-mobile_menu_cutoff) {
     background-color: transparent;
-    color: transparentize($chiedi-light-green, 0.2);
+    color: transparentize($color_chiedi_light_green, 0.2);
     @include ie8 {
-      color: $chiedi-light-green;
+      color: $color_chiedi_light_green;
     }
-    &:hover {
+    &:hover, &:focus {
       text-decoration: underline;
-      color: $chiedi-green;
+      color: $color_chiedi_green;
     }
   }
 }
@@ -46,9 +40,9 @@
   }
 
   @include respond-min ($main_menu-mobile_menu_cutoff) {
-    background-color: $white;
+    background-color: $color_white;
     &:hover{
-      background-color: $white;
+      background-color: $color_white;
     }
   }
 }
@@ -56,11 +50,11 @@
 /* Styling if not part of the main menu on larger screens */
 %sub-menu-item {
   @include respond-min($main_menu-mobile_menu_cutoff) {
-    color: transparentize($chiedi-light-green, 0.2);
+    color: transparentize($color_chiedi_light_green, 0.2);
 
-    &:hover {
+    &:hover, &:focus {
       background-color: $banner_bg;
-      color: $chiedi-light-green;
+      color: $color_chiedi_light_green;
     }
   }
 }
@@ -79,12 +73,14 @@ body {
 }
 
 a {
-  color: $link-color;
-
-  &:hover,
-  &:active,
+  &:link,
   &:visited {
     color: $link-color;
+  }
+  &:hover,
+  &:active,
+  &:focus {
+    color: lighten($link-color, 10%);
   }
 }
 
@@ -131,13 +127,13 @@ a.link_button_green,
 a.link_button_green_large,
 #frontpage-lead-button {
   text-decoration: none;
-  color: $white;
-  background-color: $chiedi-light-green;
+  color: $color_white;
+  background-color: $color_chiedi_light_green;
 
   display: inline-block;
   cursor: pointer;
   /* This style is expressed for all borders to avoid triggering an IE9 border rendering bug */
-  border-style: solid; border-color: darken($chiedi-light-green, 15%); border-width: 0 0 4px 0;
+  border-style: solid; border-color: darken($color_chiedi_light_green, 15%); border-width: 0 0 4px 0;
   border-radius: 0;
   padding: 3px 7px;
   line-height: normal;
@@ -152,9 +148,9 @@ a.link_button_green_large,
 
   &:hover,
   &:focus {
-    background-color: $chiedi-light-green;
+    background-color: $color_chiedi_light_green;
     text-decoration: none;
-    border-bottom: 4px solid darken($chiedi-green, 15%);
+    border-bottom: 4px solid darken($color_chiedi_green, 15%);
   }
 
   &:active {
@@ -208,9 +204,14 @@ a.link_button_green_large {
   background-color: $banner-bg;
 }
 
+#banner_content .banner_site-title {
+  padding: 1em;
+  margin-bottom: 1em;
+}
+
 #topnav {
   background-color: $main_menu-bg;
-  border-top: 1px solid darken($creamy-grey, 10%);
+  border-top: 1px solid darken($color_creamy_grey, 10%);
   padding-bottom: 0;
 
   @include respond-min($main_menu-mobile_menu_cutoff) {
@@ -221,65 +222,78 @@ a.link_button_green_large {
 #navigation {
   border-bottom: none;
 
-  a {
+  a, a:link {
     @extend %menu-item;
     font-weight: bold;
   }
 
-  li + li:not(#navigation_search) {
+  .selected {
+    a, a:link {
+      @extend %selected-menu-item;
+    }
+  }
+
+  @include respond-min( $main_menu-mobile_menu_cutoff ){
+    padding-right: 0;
+    a {
+      line-height: 1em;
+      padding: 1em;
+    }
+  }
+
+  li + li:not(.navigation_search) {
     border-left: 0;
     @include respond-min($main_menu-mobile_menu_cutoff) {
-      border-left: 1px solid $creamy-grey;
+      border-left: 1px solid $color_creamy_grey;
     }
   }
-  /* Show which section is currently selected */
-  li.selected a {
-    @extend %selected-menu-item;
+}
+
+.navigation_search {
+  padding: 0.5em 1em; // match other navigation links
+
+  @include respond-min( $main_menu-mobile_menu_cutoff ){
+    width: 17em;
+    float: right !important // override `#navigation li`;
   }
 
-  /* Vertically align the search box */
-  #navigation_search {
-    input {
-      margin-top: 0.313em;
-      margin-bottom: 0.313em;
-      height: 1.875em;
-      @include ie8 {
-        height: 33px;
-        font-size: 1.1em;
-        padding: 0;
-      }
-    }
+  form {
+    margin: 0;
   }
 
-  #navigation_search_form {
-    label {
-      opacity: 0.4;
-      transition: opacity 0.3s ease-out;
-    }
-
-    &:hover {
-      label {
-        opacity: 0.9;
-      }
-    }
+  input, button {
+    display: block;
+    margin: 0;
+    float: left;
+    font-size: 1em;
+    line-height: 1em;
   }
 
-  /* Vertically align the label image for older IE*/
-  @include ie8 {
-    img {
-      margin-top: 0.626em;
-    }
+  input {
+    width: 75%;
+    height: 2em;
+    padding: 0 0.5em;
+    border-radius: 0.2em 0 0 0.2em !important; // override `form input[type="search"]`
+    border: 1px solid $color_medium_grey;
   }
 
-  #navigation_search_button {
-    background-color: mix($main_menu-search_bg, $main_menu-bg, 50%);
-    transition: all 0.3s ease-out;
-    color: $main_menu-search_text;
-    border-radius: 0;
-    font-size: inherit;
+  button {
+    width: 25%;
 
-    &:focus {
-      box-shadow: 0 0 4px #ccc;
+    height: 0;
+    overflow: hidden;
+    padding: 2em 0 0 0;
+    border-radius: 0 0.2em 0.2em 0;
+
+    background: darken($color_chiedi_light_green, 5%) image-url('search.png') no-repeat 50% 50%;
+    background-size: 20px 20px;
+    @media (-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 144dpi) {
+      background-image: image-url('search@2.png');
+    }
+    background-image: image-url('search.svg'), none;
+
+    &:hover, &:focus {
+      background-color: darken($color_chiedi_light_green, 10%);
     }
   }
 }
@@ -335,7 +349,6 @@ a.link_button_green_large {
     font-weight: normal;
   }
   #logged_in_links {
-    top: 4em;
     .greeting, a {
       font-weight: normal;
       display: inline-block;
@@ -343,7 +356,7 @@ a.link_button_green_large {
     @include respond-min($main_menu-mobile_menu_cutoff) {
       a {
         padding: 5px;
-        color: $chiedi-green;
+        color: $color_chiedi_green;
       }
       a + a {
         margin-left: 0;
@@ -419,7 +432,6 @@ a.link_button_green_large {
       }
     }
   }
-
 }
 
 // ==================
@@ -593,7 +605,7 @@ a.link_to_this {
 
     &:hover {
       a {
-        color: $chiedi-green !important;
+        color: $color_chiedi_green !important;
         display: inline;
       }
     }
@@ -609,7 +621,7 @@ a.link_to_this {
 dt {
   color: $heading-color;
   font-weight: 700;
-  
+
   & + dd {
     margin-bottom: 20px;
   }
