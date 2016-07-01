@@ -192,11 +192,13 @@
 
       <div class="advice-panel">
         <ul>
-          <li><%= _('Scrivi la tua richiesta con un <strong>linguaggio semplice e preciso</strong>.') %></li>
-          <li><%= _('Chiedi documenti o informazioni <strong>nella maniera più specifica che ti è possibile</strong>') %></li>
-          <li><%= _('Appellati alla Legge 241/1990 o al Decreto 33/2013. Se non sai quale scegliere leggi <a href="{{url}}">qui</a>.', :url => (help_requesting_path + '#scelta_legge').html_safe) %></li>
-          <li><%= _('Se fai una richiesta di accesso civico indirizzala "Alla cortese attenzione del Responsabile per la Trasparenza"') %></li>
-          <li><%= _('Altri semplici consigli su come scrivere una buona richiesta li trovi <a href="{{url}}">qui</a>.', :url => (help_requesting_path + '#buona_richiesta').html_safe) %></li>
+          <li>Scrivi la tua richiesta con un <strong>linguaggio semplice e preciso</strong>.</li>
+          <li>Chiedi documenti o informazioni <strong>nella maniera più specifica che ti è possibile</strong></li>
+          <li>Appellati alla Legge 241/1990 o al Decreto 33/2013. Se non sai quale scegliere leggi
+              <a href="<%= (help_requesting_path + '#scelta_legge').html_safe %>">qui</a>.</li>
+          <li>Se fai una richiesta di accesso civico indirizzala "Alla cortese attenzione del Responsabile per la Trasparenza"</li>
+          <li>Altri semplici consigli su come scrivere una buona richiesta li trovi
+              <a href="<%= (help_requesting_path + '#buona_richiesta').html_safe %>">qui</a>.</li>
         </ul>
       </div>
     </div>
