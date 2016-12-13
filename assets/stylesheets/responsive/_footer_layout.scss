@@ -2,6 +2,8 @@
 // FOOTER LAYOUT
 // ==================
 
+@import "foundation/components/block-grid";
+
 #footer {
   border-top: 1px solid darken($color_creamy_grey, 10%);
   background-color: $color_creamy_grey;
