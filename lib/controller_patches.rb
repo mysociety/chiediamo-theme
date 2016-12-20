@@ -60,5 +60,8 @@ Rails.configuration.to_prepare do
       end
     end
 
+    def create_timestamp(time=Time.now)
+      time.strftime('%Y%m%d-%H:%M:%S')
+    end
   end
 end
