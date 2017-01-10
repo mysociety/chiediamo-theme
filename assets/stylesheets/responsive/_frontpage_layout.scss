@@ -212,12 +212,12 @@
 
   .frontpage-updates-title {
     text-decoration: none;
-    color: black;
+    color: $color_black;
 
     &:hover,
     &:active,
     &:visited {
-      color: black;
+      color: $color_black;
     }
   }
 
@@ -233,7 +233,7 @@
 
   &:hover {
     .frontpage-blog-post--article-link {
-      color: black;
+      color: $color_black;
     }
 
     .frontpage-blog-post--image {
