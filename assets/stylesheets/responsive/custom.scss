@@ -249,7 +249,7 @@ a.link_button_green_large {
   }
 }
 
-.navigation_search {
+#navigation_search {
   padding: 0.5em 1em; // match other navigation links
 
   @include respond-min( $main_menu-mobile_menu_cutoff ){
@@ -277,13 +277,14 @@ a.link_button_green_large {
     border: 1px solid $color_medium_grey;
   }
 
-  button {
+  button, button[type="submit"] {
     width: 25%;
 
     height: 0;
     overflow: hidden;
     padding: 2em 0 0 0;
     border-radius: 0 0.2em 0.2em 0;
+    font-size: 1em;
 
     background: darken($color_chiedi_light_green, 5%) image-url('search.png') no-repeat 50% 50%;
     background-size: 20px 20px;
