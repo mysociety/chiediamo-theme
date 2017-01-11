@@ -76,12 +76,10 @@
 <div id="frontpage-content">
 
   <div id="frontpage-updates">
+    <% cache_if_caching_fragments(@fragment_key) do %>
     <div id="frontpage-updates-news">
       <h2><a class="frontpage-updates-title" href="http://dirittodisapere.it/blog" target="_blank">News</a></h2>
-      <% 4.times do |position| %>
-        <% item = @blog_items[position] %>
-        <% break if item.nil? %>
-
+      <% @blog_items.take(4).each_with_index do |item, position| %>
         <div class="frontpage-blog-post <%= position.even? ? 'left' : 'right' %>">
           <a href="<%= item['link'][0] %>" class="frontpage-blog-post--link"></a>
           <div class="frontpage-blog-post--image <%= 'placeholder-image' if item['thumbnail'].nil? || item['thumbnail'][0].blank? %>" style="background-image: url(<%= (item['thumbnail'].nil? || item['thumbnail'][0].blank?) ? image_path('dds-logo.png') : item['thumbnail'][0] %>);">
@@ -98,6 +96,7 @@
 
       <div class="link-arrow more-news-link"><a href="http://dirittodisapere.it/blog" target="_blank">Altre notizie »</a></div>
     </div>
+    <% end # end of cache %>
 
     <div id="tweets-timeline">
       <h2><a class="frontpage-updates-title" href="https://twitter.com/dirittodisapere" target="_blank">Tweets</a></h2>
