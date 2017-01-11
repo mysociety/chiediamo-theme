@@ -1,4 +1,48 @@
 // ==================
+// GENERAL STYLES
+// ==================
+
+body {
+  background-color: $body-bg;
+  color: $body-font-color;
+}
+
+.entirebody {
+  font-family: $font-family;
+}
+
+a,
+a:visited {
+  color: $link-color;
+  &:hover,
+  &:active,
+  &:focus {
+    color: lighten($link-color, 10%);
+  }
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: $heading-color;
+  font-family: $font-family;
+}
+
+/* Let h1s be a little smaller on small screens */
+@media( max-width: $main_menu-mobile_menu_cutoff ){
+  h1 {
+    font-size: 2em;
+  }
+}
+
+.inline-list {
+  list-style: none outside none;
+  padding: 0;
+  li {
+    display: inline-block;
+    margin-right: 1.25em;
+  }
+}
+
+// ==================
 // MIXIN STYLES
 // ==================
 
@@ -7,6 +51,89 @@
   overflow: hidden;
   text-indent: 150%;
   white-space: nowrap;
+}
+
+/* Button styles */
+.button-base {
+  padding: 0.5em 1.25em;
+  border-radius: 3px;
+  display: inline-block;
+  font-weight: 600;
+  text-decoration: none;
+  transition: background-color 300ms ease-out;
+  margin-bottom: 0;
+  font-family: $font-family;
+  &:hover,
+  &:active,
+  &:focus {
+    text-decoration: none;
+    transition: background-color 300ms ease-out;
+  }
+}
+
+a.button,
+.button,
+.button:visited {
+    @extend .button-base;
+    color: $color_white;
+    background-color: $button-bg;
+    border: none;
+    &:hover,
+    &:active,
+    &:focus,
+    &:visited:hover,
+    &:visited:active,
+    &:visited:focus {
+        background-color: darken($button-bg, 10%);
+        color: $color_white;
+    }
+}
+
+a.button-secondary,
+.button-secondary,
+.button-secondary:visited {
+    @extend .button-base;
+    background-color: $color_light_grey;
+    color: $color_black;
+    font-weight: normal;
+    &:hover,
+    &:active,
+    &:focus {
+        color: $color_black;
+        background-color: darken($color_light_grey, 7.5%);
+        color: $color_black;
+    }
+}
+
+.button-tertiary {
+    @extend .button-base;
+    background-color: transparent;
+    color: $color_black;
+    font-weight: normal;
+    border: 1px solid #e2dfd9;
+    &:hover,
+    &:active,
+    &:focus {
+        background-color: darken(#e2dfd9, 7.5%);
+        border: 1px solid darken(#e2dfd9, 12.5%);
+    }
+}
+
+.button-disabled {
+  opacity: 0.333;
+  &:hover,
+  &:active,
+  &:focus {
+    background-color: inherit;
+    color: inherit;
+  }
+}
+
+.cplink__button {
+  @extend .button-tertiary;
+  border-bottom-left-radius: 0;
+  border-left: 0;
+  border-top-left-radius: 0;
 }
 
 /* General styling of nav menu items */
@@ -59,43 +186,6 @@
   }
 }
 
-// ==================
-// GENERAL STYLES
-// ==================
-
-body {
-  background-color: $body-bg;
-  color: $body-font-color;
-}
-
-.entirebody {
-  font-family: $font-family;
-}
-
-a {
-  &:link,
-  &:visited {
-    color: $link-color;
-  }
-  &:hover,
-  &:active,
-  &:focus {
-    color: lighten($link-color, 10%);
-  }
-}
-
-h1, h2, h3, h4, h5, h6 {
-  color: $heading-color;
-  font-family: $font-family;
-}
-
-/* Let h1s be a little smaller on small screens */
-@media( max-width: $main_menu-mobile_menu_cutoff ){
-  h1 {
-    font-size: 2em;
-  }
-}
-
 /* Square corners for text type inputs */
 form input[type="text"],
 form input[type="password"],
@@ -122,50 +212,17 @@ input.use-datepicker[type=text] {
   background:image-url('calendar.png') no-repeat 100px 5px #fff;
 }
 
-form input[type=submit],
-a.link_button_green,
-a.link_button_green_large,
-#frontpage-lead-button {
+form input[type=submit], a.link_button_green, a.link_button_green_large {
+  @extend .button;
   text-decoration: none;
-  color: $color_white;
-  background-color: $color_chiedi_light_green;
-
-  display: inline-block;
-  cursor: pointer;
-  /* This style is expressed for all borders to avoid triggering an IE9 border rendering bug */
-  border-style: solid; border-color: darken($color_chiedi_light_green, 15%); border-width: 0 0 4px 0;
-  border-radius: 0;
-  padding: 3px 7px;
-  line-height: normal;
-  font-size: 1.1rem;
-  /* Same height as form elements */
-  height: 2.3125rem;
-  @include ie8 {
-    height: 2.3125em;
-    font-size: 1.1em;
-  }
-  vertical-align: top;
-
-  &:hover,
-  &:focus {
-    background-color: $color_chiedi_light_green;
-    text-decoration: none;
-    border-bottom: 4px solid darken($color_chiedi_green, 15%);
-  }
-
-  &:active {
-    border-bottom: 0;
-    margin-top: 4px;
-    margin-bottom: -4px;
-    outline: none;
-  }
 }
 
-@include lte-ie7 {
+@include lte-ie7{
+
   a.link_button_green, a.link_button_green_large {
     padding: 0 7px;
     height: 31px;
-    font-weight: bold;
+    font-weight: 600;
   }
 
   form input[type=submit] {
@@ -183,7 +240,7 @@ a.link_button_green_large {
      height: 66px;
    }
    @include lte-ie7 {
-     height: 50px;
+     height: 45px;
    }
 }
 
@@ -222,13 +279,13 @@ a.link_button_green_large {
 #navigation {
   border-bottom: none;
 
-  a, a:link {
+  a {
     @extend %menu-item;
     font-weight: bold;
   }
 
   .selected {
-    a, a:link {
+    a {
       @extend %selected-menu-item;
     }
   }
@@ -456,6 +513,41 @@ a.link_button_green_large {
 // REQUEST PAGE
 // ==================
 
+.request-header__action-bar {
+  .action-menu__button {
+    @extend .button-secondary;
+    &:after {
+      border-color: #a5a5a5 transparent transparent transparent;
+      right: 7%;
+    }
+  }
+
+  .action-bar__follow-button {
+    a.track__action {
+      @extend .button;
+      border-top-right-radius: 0;
+      border-bottom-right-radius: 0;
+      line-height: 1.5em;
+      margin-bottom: 0;
+    }
+  }
+
+  .action-bar__follower-count {
+    color: $color_dark_grey;
+    @include respond-min($main_menu-mobile_menu_cutoff) {
+      padding: 0.56em 1.25em;
+      border: 1px solid $color_light_grey;
+      position: relative;
+      left: -3px;
+      line-height: 1.6em;
+      border-left: 0;
+      border-radius: 3px;
+      border-top-left-radius: 0;
+      border-bottom-left-radius: 0;
+    }
+  }
+}
+
 div.correspondence {
   background-color: $correspondence-bg;
   box-shadow: 0 1px 2px rgba(0,0,0,0.25);
@@ -582,6 +674,43 @@ a.link_to_this {
 #user_photo_on_profile {
   img, #set_photo {
     margin-top:0.5em;
+  }
+}
+
+/* Authority page */
+.authority__header__action-bar {
+  .action-bar__follow-button,
+  .feed_link_sidebar {
+    .link_button_green {
+      @extend .button-secondary;
+    }
+  }
+
+  .authority__body__sidebar .list-filter-item input[type=submit] {
+    @extend .button-secondary;
+  }
+
+  .action-bar__follow-button {
+    a.link_button_green {
+      border-top-right-radius: 0;
+      border-bottom-right-radius: 0;
+      margin-bottom: 0;
+    }
+  }
+
+  .action-bar__follower-count {
+    color: $color_dark_grey;
+    @include respond-min($main_menu-mobile_menu_cutoff) {
+      padding: 0.56em 1.25em;
+      border: 1px solid $color_light_grey;
+      position: relative;
+      left: -5px;
+      line-height: 0.9em;
+      border-left: 0;
+      border-radius: 3px;
+      border-top-left-radius: 0;
+      border-bottom-left-radius: 0;
+    }
   }
 }
 

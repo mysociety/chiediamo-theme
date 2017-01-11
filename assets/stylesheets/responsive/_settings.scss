@@ -48,7 +48,7 @@ $locale-hover-color: $color_white;
 $link-color: $color_chiedi_green;
 $body-font-color: $color_charcoal;
 $body-bg: $color_white;
-$button-bg: $color_lighter_blue;
+$button-bg: darken($color_chiedi_light_green, 3%);
 $button-color: $color_white;
 $heading-color: $color_charcoal;
 
