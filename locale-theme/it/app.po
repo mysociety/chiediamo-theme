@@ -6,6 +6,7 @@
 # Antonella <anapolitano@gmail.com>, 2015
 # Claudio Cesarano <claudio@dirittodisapere.it>, 2016
 # Gareth Rees <gareth@mysociety.org>, 2016
+# Liz Conlan <liz@mysociety.org>, 2017
 # louisecrow <louise@mysociety.org>, 2015
 # louisecrow <louise@mysociety.org>, 2015
 # Marco Giustini <info@marcogiustini.info>, 2013
@@ -151,7 +152,7 @@ msgid "To:"
 msgstr "A:"
 
 msgid "View authorities"
-msgstr "Guarda tutte le pubbliche amministrazioni"
+msgstr "Elenco amministrazioni"
 
 msgid "We send the question for you"
 msgstr "Noi inviamo la richiesta alla pubblica amministrazione"
