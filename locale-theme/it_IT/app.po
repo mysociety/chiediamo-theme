@@ -6,20 +6,17 @@
 # Antonella <anapolitano@gmail.com>, 2015
 # Claudio Cesarano <claudio@dirittodisapere.it>, 2016
 # Gareth Rees <gareth@mysociety.org>, 2016
-# Liz Conlan <liz@mysociety.org>, 2017
 # louisecrow <louise@mysociety.org>, 2015
-# louisecrow <louise@mysociety.org>, 2015
-# Marco Giustini <info@marcogiustini.info>, 2013
 # Marco Giustini <info@marcogiustini.info>, 2013
 msgid ""
 msgstr ""
 "Project-Id-Version: alaveteli\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2016-07-01 11:14+0000\n"
-"PO-Revision-Date: 2016-10-26 17:23+0000\n"
-"Last-Translator: Claudio Cesarano <claudio@dirittodisapere.it>\n"
-"Language-Team: Italian (http://www.transifex.com/mysociety/dirittodisapere-theme/language/it/)\n"
-"Language: it\n"
+"PO-Revision-Date: 2017-01-09 15:28+0000\n"
+"Last-Translator: Liz Conlan <liz@mysociety.org>\n"
+"Language-Team: Italian (Italy) (http://www.transifex.com/mysociety/dirittodisapere-theme/language/it_IT/)\n"
+"Language: it_IT\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -152,7 +149,7 @@ msgid "To:"
 msgstr "A:"
 
 msgid "View authorities"
-msgstr "Elenco amministrazioni"
+msgstr "Guarda tutte le pubbliche amministrazioni"
 
 msgid "We send the question for you"
 msgstr "Noi inviamo la richiesta alla pubblica amministrazione"
