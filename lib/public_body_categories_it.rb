@@ -1,5 +1,5 @@
 # -*- encoding : utf-8 -*-
-PublicBodyCategories.add(:it_IT, [
+PublicBodyCategories.add(:it, [
         "Miscellaneous",
             [ "ministeri", "Ministeri", "ministeri" ],
             [ "regioni", "Regioni", "regioni" ],

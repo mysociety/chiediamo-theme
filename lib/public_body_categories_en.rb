@@ -8,4 +8,4 @@
 #       [ "another_tag_2", "Another sub category title", "another descriptive sentence"]
 # ])
 
-PublicBodyCategories.add(:it_IT, [])
+PublicBodyCategories.add(:it, [])
